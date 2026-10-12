@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <filter id="boxShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="3" stdDeviation="1" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <g id="checkYellowSometimes">
+      <rect width="58" height="58" rx="2" fill="#ffd972" stroke="#111111" stroke-width="2.5" filter="url(#boxShadow)"/>
+      <path d="M 12 36 L 24 49 L 51 16 L 44 12 L 23 39 L 17 31 Z" fill="#b08719" />
+      <path d="M 11 34 L 23 47 L 50 14 L 44 11 L 22 38 L 16 30 Z" fill="#ffffff" />
+    </g>
+    <g id="boxX">
+      <rect width="58" height="58" rx="2" fill="#ffffff" stroke="#111111" stroke-width="2.5" filter="url(#boxShadow)"/>
+      <path d="M 17 17 L 41 41 M 41 17 L 17 41" stroke="#222222" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <rect width="400" height="320" fill="#ffffff"/>
+
+  <!-- Word Title -->
+  <text x="200" y="70" font-family="'Nunito', 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="900" fill="#0000cd" text-anchor="middle">sometimes</text>
+
+  <!-- Row 1: X, Check, X, X, X -->
+  <g transform="translate(38, 125)">
+    <use href="#boxX" x="0" y="0"/>
+    <use href="#checkYellowSometimes" x="66" y="0"/>
+    <use href="#boxX" x="132" y="0"/>
+    <use href="#boxX" x="198" y="0"/>
+    <use href="#boxX" x="264" y="0"/>
+  </g>
+
+  <!-- Row 2: Check, X, X, Check, X -->
+  <g transform="translate(38, 205)">
+    <use href="#checkYellowSometimes" x="0" y="0"/>
+    <use href="#boxX" x="66" y="0"/>
+    <use href="#boxX" x="132" y="0"/>
+    <use href="#checkYellowSometimes" x="198" y="0"/>
+    <use href="#boxX" x="264" y="0"/>
+  </g>
+</svg>

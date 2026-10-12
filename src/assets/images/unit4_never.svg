@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <filter id="boxShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="3" stdDeviation="1" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <g id="boxNeverX">
+      <rect width="58" height="58" rx="2" fill="#ffffff" stroke="#111111" stroke-width="2.5" filter="url(#boxShadow)"/>
+      <!-- Red bold X with shadow -->
+      <path d="M 15 15 L 43 43 M 43 15 L 15 43" stroke="#992318" stroke-width="7.5" stroke-linecap="round"/>
+      <path d="M 14 14 L 42 42 M 42 14 L 14 42" stroke="#ea4c38" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect width="400" height="320" fill="#ffffff"/>
+
+  <!-- Word Title -->
+  <text x="200" y="70" font-family="'Nunito', 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="900" fill="#0000cd" text-anchor="middle">never</text>
+
+  <!-- Row 1: 5 red Xs -->
+  <g transform="translate(38, 125)">
+    <use href="#boxNeverX" x="0" y="0"/>
+    <use href="#boxNeverX" x="66" y="0"/>
+    <use href="#boxNeverX" x="132" y="0"/>
+    <use href="#boxNeverX" x="198" y="0"/>
+    <use href="#boxNeverX" x="264" y="0"/>
+  </g>
+
+  <!-- Row 2: 5 red Xs -->
+  <g transform="translate(38, 205)">
+    <use href="#boxNeverX" x="0" y="0"/>
+    <use href="#boxNeverX" x="66" y="0"/>
+    <use href="#boxNeverX" x="132" y="0"/>
+    <use href="#boxNeverX" x="198" y="0"/>
+    <use href="#boxNeverX" x="264" y="0"/>
+  </g>
+</svg>
